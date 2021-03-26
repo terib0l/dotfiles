@@ -1,0 +1,9 @@
+set number
+set autoindent
+set tabstop=4
+set shiftwidth=4
+set splitright
+set clipboard=unnamed
+set hls
+set list
+set lcs=tab:>.
