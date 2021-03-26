@@ -120,9 +120,11 @@ alias cl='c; la'
 alias open='powershell.exe start'
 alias C='cd /mnt/c/'
 alias CU='cd /mnt/c/Users/Toshiba-Raptop/'
-alias nv='nvim'
+alias vim='nvim'
 alias ..='cd ..'
 alias ....='cd ../../'
+alias ......='cd ../../../'
+alias ........='cd ../../../../'
 
 # Prompt Config
 if [ $UID -eq 0 ]; then
