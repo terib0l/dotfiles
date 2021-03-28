@@ -79,7 +79,7 @@ fi
 
 # Alias Config
 alias ll='ls -alF'
-alias la='ls -A'
+alias la='ls -AF'
 alias l='ls -CF'
 alias c='clear'
 alias cl='c; la'
