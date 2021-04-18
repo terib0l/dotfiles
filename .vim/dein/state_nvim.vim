@@ -1,12 +1,12 @@
-if g:dein#_cache_version !=# 150 || g:dein#_init_runtimepath !=# '/home/terib0l/.vim/dein/repos/github.com/Shougo/dein.vim,/home/terib0l/.config/nvim,/etc/xdg/nvim,/home/terib0l/.local/share/nvim/site,/usr/local/share/nvim/site,/usr/share/nvim/site,/var/lib/snapd/desktop/nvim/site,/usr/share/nvim/runtime,/var/lib/snapd/desktop/nvim/site/after,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,/home/terib0l/.local/share/nvim/site/after,/etc/xdg/nvim/after,/home/terib0l/.config/nvim/after' | throw 'Cache loading error' | endif
-let [plugins, ftplugin] = dein#load_cache_raw(['/home/terib0l/Git/dotfiles/.config/nvim/init.vim', '/home/terib0l/.config/nvim/dein.toml', '/home/terib0l/.config/nvim/dein_lazy.toml'])
+if g:dein#_cache_version !=# 150 || g:dein#_init_runtimepath !=# '/Users/wayne/.vim/dein/repos/github.com/Shougo/dein.vim,/Users/wayne/.config/nvim,/etc/xdg/nvim,/Users/wayne/.local/share/nvim/site,/usr/local/share/nvim/site,/usr/share/nvim/site,/usr/local/Cellar/neovim/0.4.4/share/nvim/runtime,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,/Users/wayne/.local/share/nvim/site/after,/etc/xdg/nvim/after,/Users/wayne/.config/nvim/after' | throw 'Cache loading error' | endif
+let [plugins, ftplugin] = dein#load_cache_raw(['/Users/wayne/Git/dotfiles/.config/nvim/init.vim', '/Users/wayne/.config/nvim/dein.toml', '/Users/wayne/.config/nvim/dein_lazy.toml'])
 if empty(plugins) | throw 'Cache loading error' | endif
 let g:dein#_plugins = plugins
 let g:dein#_ftplugin = ftplugin
-let g:dein#_base_path = '/home/terib0l/.vim/dein'
-let g:dein#_runtime_path = '/home/terib0l/.vim/dein/.cache/init.vim/.dein'
-let g:dein#_cache_path = '/home/terib0l/.vim/dein/.cache/init.vim'
-let &runtimepath = '/home/terib0l/.vim/dein/repos/github.com/Shougo/dein.vim,/home/terib0l/.config/nvim,/etc/xdg/nvim,/home/terib0l/.local/share/nvim/site,/usr/local/share/nvim/site,/usr/share/nvim/site,/var/lib/snapd/desktop/nvim/site,/home/terib0l/.vim/dein/.cache/init.vim/.dein,/usr/share/nvim/runtime,/home/terib0l/.vim/dein/.cache/init.vim/.dein/after,/var/lib/snapd/desktop/nvim/site/after,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,/home/terib0l/.local/share/nvim/site/after,/etc/xdg/nvim/after,/home/terib0l/.config/nvim/after'
+let g:dein#_base_path = '/Users/wayne/.vim/dein'
+let g:dein#_runtime_path = '/Users/wayne/.vim/dein/.cache/init.vim/.dein'
+let g:dein#_cache_path = '/Users/wayne/.vim/dein/.cache/init.vim'
+let &runtimepath = '/Users/wayne/.vim/dein/repos/github.com/Shougo/dein.vim,/Users/wayne/.config/nvim,/etc/xdg/nvim,/Users/wayne/.local/share/nvim/site,/usr/local/share/nvim/site,/usr/share/nvim/site,/Users/wayne/.vim/dein/.cache/init.vim/.dein,/usr/local/Cellar/neovim/0.4.4/share/nvim/runtime,/Users/wayne/.vim/dein/.cache/init.vim/.dein/after,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,/Users/wayne/.local/share/nvim/site/after,/etc/xdg/nvim/after,/Users/wayne/.config/nvim/after'
 filetype off
   nnoremap [denite] <Nop>
   nmap <C-d> [denite]

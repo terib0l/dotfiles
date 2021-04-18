@@ -1,3 +1,29 @@
 [user]
-	name = terib0l
-	email = taiyakiou@gmail.com
+  name = "terib0l"
+  email = taiyakiou@gmail.com
+
+[color]
+  ui = auto
+
+[alias]
+  st = status
+  co = checkout
+  br = branch
+  up = rebase
+  co = commit
+  ps = push
+  pl = pull
+  df = diff
+
+[core]
+  editor = vim
+  quotepath = false
+  ignorecase = false
+  autocrlf = false
+
+#[push]
+#  default = current
+
+#[pull]
+#  ff = only
+#  rebase = false

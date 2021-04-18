@@ -106,7 +106,7 @@ let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 " tomlのディレクトリへのパス
 let s:toml_dir = expand('~/.config/nvim')  
 
-" set runtimepath+=/home/terib0l/.vim/dein/repos/github.com/Shougo/dein.vim
+" set runtimepath+=~/.vim/dein/repos/github.com/Shougo/dein.vim
 execute 'set runtimepath^=' . s:dein_repo_dir
 
 if dein#load_state(s:dein_dir)
@@ -115,7 +115,6 @@ if dein#load_state(s:dein_dir)
   call dein#load_toml(s:toml_dir . '/dein.toml', {'lazy': 0})
   " 利用時に読み込むプラグイン群のtoml
   call dein#load_toml(s:toml_dir . '/dein_lazy.toml', {'lazy': 1})
-  " call dein#add('/home/terib0l/.vim/dein/repos/github.com/Shougo/dein.vim')
   call dein#end()
   call dein#save_state()
 endif

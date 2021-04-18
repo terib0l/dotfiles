@@ -79,11 +79,10 @@ fi
 
 # Alias Config
 alias ll='ls -alF'
-alias la='ls -A'
+alias la='ls -AF'
 alias l='ls -CF'
 alias c='clear'
 alias cl='c; la'
-alias open='powershell.exe start'
 alias C='cd /mnt/c/'
 alias CU='cd /mnt/c/Users/Toshiba-Raptop/'
 alias vim='nvim'
@@ -91,6 +90,8 @@ alias ..='cd ..'
 alias ....='cd ../../'
 alias ......='cd ../../../'
 alias ........='cd ../../../../'
+alias rm='rm -i'
+alias mv='mv -i'
 
 # Prompt Config
 if [ $UID -eq 0 ]; then
