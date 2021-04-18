@@ -29,10 +29,6 @@ filetype off
   nmap [gitgutter]j <Plug>GitGutterNextHunk
   nmap [gitgutter]k <Plug>GitGutterPrevHunk
   nmap [gitgutter]u <Plug>GitGutterUndoHunk
-  nmap n <Plug>(anzu-n-with-echo)
-  nmap N <Plug>(anzu-N-with-echo)
-  nmap * <Plug>(anzu-star)
-  nmap # <Plug>(anzu-sharp)
   command Gst :Gstatus
   command Gdf :Gdiff
   command Gbl :Gblame
@@ -41,4 +37,8 @@ filetype off
   let g:deoplete#enable_at_startup = 1
   inoremap <expr><Tab> pumvisible() ? "\<DOWN>" : "\<Tab>"
   inoremap <expr><S-Tab> pumvisible() ? "\<UP>" : "\<S-Tab>"
+  nmap n <Plug>(anzu-n-with-echo)
+  nmap N <Plug>(anzu-N-with-echo)
+  nmap * <Plug>(anzu-star)
+  nmap # <Plug>(anzu-sharp)
 autocmd dein-events InsertEnter * call dein#autoload#_on_event("InsertEnter", ['deoplete.nvim'])

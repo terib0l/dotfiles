@@ -13,12 +13,12 @@ hook_add = '''
 '''
 
 # if,do,def等のブロックのendを自動入力
-[[plugins]]
-repo = 'tpope/vim-endwise'
+#[[plugins]]
+#repo = 'tpope/vim-endwise'
 
 # かっこ等の閉じを自動入力
-[[plugins]]
-repo = 'Townk/vim-autoclose'
+#[[plugins]]
+#repo = 'Townk/vim-autoclose'
 
 # コードチェックの表示
 [[plugins]]
