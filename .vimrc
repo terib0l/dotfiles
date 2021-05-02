@@ -5,7 +5,6 @@
 " Normal Mode
 cnoremap init :<C-u>edit $MYVIMRC<CR>
 noremap <Space>s :source $MYVIMRC<CR>
-noremap <Space>s :source $MYVIMRC<CR>
 
 " Split View movekey bind
 noremap <silent><C-h> <C-w>h
