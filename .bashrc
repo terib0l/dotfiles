@@ -90,8 +90,7 @@ alias ..='cd ..'
 alias ....='cd ../../'
 alias ......='cd ../../../'
 alias ........='cd ../../../../'
-alias rm='rm -i'
-alias mv='mv -i'
+alias news='python3 ~/Git/practice/3-Python/collins/cysec_news_feed.py'
 
 # Prompt Config
 if [ $UID -eq 0 ]; then
