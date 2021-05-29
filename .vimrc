@@ -22,6 +22,10 @@ vnoremap <S-j> 10<Down>
 vnoremap <S-k> 10<UP>
 vnoremap <S-l> 10<Right>
 
+" Home / End movekey bind
+nnoremap <C-h> <Home>
+nnoremap <C-e> <End>
+
 " Insert Mode
 inoremap <silent> jj <ESC>:<C-u>w<CR>:  " InsertMode抜けて保存
 " Insert Mode movekey bind
@@ -86,3 +90,8 @@ set nobackup
 set autoread
 set hidden
 set showcmd
+
+" for Python setting
+inoremap [ []<LEFT>
+inoremap { {}<LEFT>
+inoremap ( ()<LEFT>
