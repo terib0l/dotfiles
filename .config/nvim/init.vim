@@ -23,7 +23,6 @@ vnoremap <S-k> 10<UP>
 vnoremap <S-l> 10<Right>
 
 " Home / End movekey bind
-nnoremap <C-h> <Home>
 nnoremap <C-e> <End>
 
 " Insert Mode
@@ -91,10 +90,14 @@ set autoread
 set hidden
 set showcmd
 
-" for Python setting
+" for Coding setting
 inoremap [ []<LEFT>
 inoremap { {}<LEFT>
+inoremap {<Enter> {}<LEFT><CR><ESC><S-o>
 inoremap ( ()<LEFT>
+inoremap (<Enter> ()<LEFT><CR><ESC><S-o>
+inoremap " ""<LEFT>
+inoremap ' ''<LEFT>
 
 " Mouse Activate setting
 if !has('nvim') && has('mouse')

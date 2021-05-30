@@ -23,7 +23,6 @@ vnoremap <S-k> 10<UP>
 vnoremap <S-l> 10<Right>
 
 " Home / End movekey bind
-nnoremap <C-h> <Home>
 nnoremap <C-e> <End>
 
 " Insert Mode
