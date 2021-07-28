@@ -83,14 +83,11 @@ alias la='ls -AF'
 alias l='ls -CF'
 alias c='clear'
 alias cl='c; la'
-alias C='cd /mnt/c/'
-alias CU='cd /mnt/c/Users/Toshiba-Raptop/'
 alias vim='nvim'
 alias ..='cd ..'
 alias ....='cd ../../'
 alias ......='cd ../../../'
 alias ........='cd ../../../../'
-alias news='python3 ~/Git/news-feed/cysec_news_feed.py'
 
 # Prompt Config
 if [ $UID -eq 0 ]; then
@@ -108,3 +105,7 @@ function add_line {
 	fi
 }
 PROMPT_COMMAND='add_line'
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

@@ -89,6 +89,7 @@ set nobackup
 set autoread
 set hidden
 set showcmd
+set nowrap
 
 " for Coding setting
 inoremap [ []<LEFT>

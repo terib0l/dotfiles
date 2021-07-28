@@ -1,0 +1,14 @@
+{
+	"generators": {
+		"4f9640a2": {
+			"type": "local",
+			"path": "/home/terib0l/.npm/_npx/4809/lib/node_modules/create-nuxt-app/lib",
+			"hash": "4f9640a2"
+		}
+	},
+	"answers": {
+		"4f9640a2__npm__": {
+			"gitUsername": "terib0l"
+		}
+	}
+}

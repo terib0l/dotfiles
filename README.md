@@ -1,7 +1,7 @@
 # Dotfiles
 ## Description
 
-I'm a neovimmer.
+This is dotfiles.
 
 ## Setup
 
@@ -18,7 +18,7 @@ $ sudo apt-get install neovim
 ```
 $ git clone https://github.com/terib0l/dotfiles
 $ cd dotfiles
-$ bash install.sh
+$ bash install
 ```
 
 ### 2. Install Dein
