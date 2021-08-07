@@ -89,6 +89,7 @@ set nobackup
 set autoread
 set hidden
 set showcmd
+set nowrap
 
 " for Python setting
 inoremap [ []<LEFT>

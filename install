@@ -1,18 +1,17 @@
 #!/bin/bash
 
-if [ -d ~/"dotfiles-backup" ]; then
+if [ -d ~/".dotfiles_backup" ]; then
 	:
 else
-	mkdir ~/"dotfiles-backup"
+	mkdir ~/".dotfiles_backup"
 fi
 
 for f in .??*
 do
 	[[ "$f" == ".git" ]] && continue
-	[[ "$f" == ".DS_Store " ]] && continue
 
 	if [ -f ~/"$f" ] || [ -d ~/"$f" ]; then
-		mv ~/"$f" ~/dotfiles-backup/
+		mv ~/"$f" ~/.dotfiles_backup/
 	else
 		:
 	fi
@@ -20,5 +19,5 @@ do
 	ln -s $(pwd)/$f ~/$f
 done
 
-echo -e "\nBackup move to ~/dotfiles-backup\n"
-echo -e "Done [dotfiles setup]\n"
+echo -e "\nBackup move to ~/.dotfiles_backup\n"
+echo "Done"
