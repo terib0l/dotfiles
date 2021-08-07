@@ -29,11 +29,16 @@ $ sudo apt-get install neovim
 
 $ bash install
 
+$ cp ~/.vimrc ~/.config/nvim/init.vim
+
 $ cd ~/.vim/dein
 
 $ rm -rf *
 
 $ curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
 
-$ sh ./installer.sh ~/.vim/dein
+$ sh installer.sh ./
+
+-*- Copy some part of output to ~/.config/nvim/init.vim -*-
+$ export MYVIMRC=path/to/dotfiles/.config/nvim/init.vim
 ```

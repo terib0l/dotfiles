@@ -25,8 +25,6 @@ vnoremap <S-l> 10<Right>
 " Home / End movekey bind
 nnoremap <C-e> <End>
 
-" Insert Mode
-inoremap <silent> jj <ESC>:<C-u>w<CR>:  " InsertMode抜けて保存
 " Insert Mode movekey bind
 inoremap <C-d> <BS>
 inoremap <C-h> <Left>
@@ -91,7 +89,24 @@ set hidden
 set showcmd
 set nowrap
 
-" for Python setting
+" for Coding setting
 inoremap [ []<LEFT>
 inoremap { {}<LEFT>
+inoremap {<Enter> {}<LEFT><CR><ESC><S-o>
 inoremap ( ()<LEFT>
+inoremap (<Enter> ()<LEFT><CR><ESC><S-o>
+inoremap " ""<LEFT>
+inoremap ' ''<LEFT>
+
+" Mouse Activate setting
+if !has('nvim') && has('mouse')
+  set mouse=a
+  if has('mouse_sgr')
+    set ttymouse=sgr
+  elseif v:version > 703 || v:version is 703 && has('patch632')
+    set ttymouse=sgr
+  else
+    set ttymouse=xterm2
+  endif
+endif
+
