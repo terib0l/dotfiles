@@ -27,18 +27,11 @@ $ sudo apt-get install python3-pip
 
 $ sudo apt-get install neovim
 
-$ bash install
+$ install
 
-$ cp ~/.vimrc ~/.config/nvim/init.vim
-
-$ cd ~/.vim/dein
-
-$ rm -rf *
+$ cd .vim/dein
 
 $ curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
 
 $ sh installer.sh ./
-
--*- Copy some part of output to ~/.config/nvim/init.vim -*-
-$ export MYVIMRC=path/to/dotfiles/.config/nvim/init.vim
 ```

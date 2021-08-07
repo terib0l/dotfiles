@@ -11,13 +11,12 @@ do
 	[[ "$f" == ".git" ]] && continue
 	[[ "$f" == ".gitignore" ]] && continue
 
-	if [ -f ~/"$f" ] || [ -d ~/"$f" ]; then
+	if [ -f ~/"$f" ]; then
 		mv ~/"$f" ~/.dotfiles_backup/
-	else
-		:
+    ln -s $(pwd)/$f ~/$f
+  elif [ -d ~/"$f" ]; then
+    ln -s $(pwd)/"$f"/* ~/"$f"/
 	fi
-
-	ln -s $(pwd)/$f ~/$f
 done
 
 source ~/.bashrc
