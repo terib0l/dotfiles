@@ -1,4 +1,5 @@
 # below ".config/"
+.config/nvim/.netrwhist
 .config/configstore
 .config/neofetch
 .config/sao-nodejs
