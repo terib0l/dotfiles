@@ -1,0 +1,10 @@
+# below ".config/"
+configstore
+neofetch
+sao-nodejs
+wslu
+
+# below ".vim/dein/"
+cache_nvim
+repos
+state_nvim.vim

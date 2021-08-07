@@ -9,6 +9,7 @@ fi
 for f in .??*
 do
 	[[ "$f" == ".git" ]] && continue
+	[[ "$f" == ".gitignore" ]] && continue
 
 	if [ -f ~/"$f" ] || [ -d ~/"$f" ]; then
 		mv ~/"$f" ~/.dotfiles_backup/

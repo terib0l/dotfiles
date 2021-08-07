@@ -25,8 +25,6 @@ vnoremap <S-l> 10<Right>
 " Home / End movekey bind
 nnoremap <C-e> <End>
 
-" Insert Mode
-inoremap <silent> jj <ESC>:<C-u>w<CR>:  " InsertMode抜けて保存
 " Insert Mode movekey bind
 inoremap <C-d> <BS>
 inoremap <C-h> <Left>
