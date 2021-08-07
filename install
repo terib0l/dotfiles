@@ -20,5 +20,7 @@ do
 	ln -s $(pwd)/$f ~/$f
 done
 
+source ~/.bashrc
+
 echo -e "\nBackup move to ~/.dotfiles_backup\n"
 echo "Done"
