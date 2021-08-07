@@ -5,6 +5,7 @@
 .config/wslu
 
 # below ".vim/dein/"
+.vim/dein/.cache
 .vim/dein/cache_nvim
 .vim/dein/repos
 .vim/dein/state_nvim.vim
