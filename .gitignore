@@ -5,7 +5,8 @@
 .config/sao-nodejs
 .config/wslu
 
-# below ".vim/dein/"
+# below ".vim/"
+.vim/.netrwhist
 .vim/dein/.cache
 .vim/dein/cache_nvim
 .vim/dein/repos

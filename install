@@ -1,25 +1,26 @@
 #!/bin/bash
 
-if [ -d ~/".dotfiles_backup" ]; then
-	:
-else
-	mkdir ~/".dotfiles_backup"
+if [ ! -d ~/".dotfiles_backup" ]; then
+  mkdir ~/".dotfiles_backup"
 fi
 
 for f in .??*
 do
-	[[ "$f" == ".git" ]] && continue
-	[[ "$f" == ".gitignore" ]] && continue
+  [[ $f == ".git" ]] && continue
+  [[ $f == ".gitignore" ]] && continue
 
-	if [ -f ~/"$f" ]; then
-		mv ~/"$f" ~/.dotfiles_backup/
+  if [ -f ~/$f ]; then
+    mv ~/$f ~/.dotfiles_backup/
     ln -s $(pwd)/$f ~/$f
-  elif [ -d ~/"$f" ]; then
-    ln -s $(pwd)/"$f"/* ~/"$f"/
-	fi
+  elif [ -d ~/$f ]; then
+    ln -s $(pwd)/$f/* ~/$f/
+  else
+    ln -s $(pwd)/$f ~/$f
+  fi
 done
 
 source ~/.bashrc
+source ~/.vimrc
 
 echo -e "\nBackup move to ~/.dotfiles_backup\n"
-echo "Done"
+echo -e "Done\n"
