@@ -29,7 +29,7 @@ $ sudo apt-get install python3-pip
 
 $ sudo apt-get install neovim
 
-$ install
+$ bash install
 
 $ cd .vim/dein
 
