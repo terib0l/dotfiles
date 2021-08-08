@@ -3,6 +3,8 @@
 
 This is dotfiles.
 
+* neovim
+
 ## Contents
 ```
 .
