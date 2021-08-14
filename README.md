@@ -29,6 +29,9 @@ $ sudo apt-get install python3-pip
 
 $ sudo apt-get install neovim
 
+# for denite -> pt
+$ sudo apt-get install tcllib
+
 $ sudo apt-get install tmux
 
 $ sh install

@@ -8,7 +8,11 @@ on_ft = 'toml'
 repo = 'Shougo/deoplete.nvim'
 on_event = 'InsertEnter'
 hook_add = '''
-  let g:deoplete#enable_at_startup = 1
-  inoremap <expr><Tab> pumvisible() ? "\<DOWN>" : "\<Tab>"
-  inoremap <expr><S-Tab> pumvisible() ? "\<UP>" : "\<S-Tab>"
+  source ~/.config/nvim/plugins/deoplete.vim
 '''
+
+[[plugins]]
+repo = 'elzr/vim-json'
+on_ft = ['json']
+
+# coc.vim (https://dev.classmethod.jp/articles/neovim_lsp_python/)
