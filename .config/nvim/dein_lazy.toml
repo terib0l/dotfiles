@@ -3,7 +3,7 @@
 repo = 'cespare/vim-toml'
 on_ft = 'toml'
 
-#
+# 自動補完
 [[plugins]]
 repo = 'Shougo/deoplete.nvim'
 on_event = 'InsertEnter'

@@ -87,12 +87,14 @@ alias ..='cd ..'
 alias ....='cd ../../'
 alias ......='cd ../../../'
 alias ........='cd ../../../../'
+alias vim='nvim'
+alias ide='/bin/bash ~/.ide'
 
 # Prompt Config
 if [ $UID -eq 0 ]; then
-	export PS1="\[\e[32m\][\w]\[\e[0m\]\n\[\e[33m\]\u\[\e[0m\]:\$ "
+	export PS1="\[\e[36m\][\w]\[\e[0m\]\n\[\e[31m\]\u\[\e[0m\]:\$ "
 else
-	export PS1="\[\e[32m\][\w]\[\e[0m\]\n\[\e[31m\]\u\[\e[0m\]:\$ "
+	export PS1="\[\e[36m\][\w]\[\e[0m\]\n\[\e[32m\]\u\[\e[0m\]:\$ "
 fi
 
 # Indent Config

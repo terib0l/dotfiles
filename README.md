@@ -2,19 +2,19 @@
 ## Description
 
 This is dotfiles.
-
-* neovim
+Using neovim + tmux like vscode.
 
 ## Contents
 ```
 .
 ├── .bashrc
 ├── .config/
-├── .gitconfig
 ├── .vim/
 ├── .vimrc
-├── README.md
-└── install
+├── .ide
+├── .tmux.conf
+├── install
+└── README.md
 ```
 
 ## Setup
@@ -28,6 +28,8 @@ $ sudo apt-get install python3
 $ sudo apt-get install python3-pip
 
 $ sudo apt-get install neovim
+
+$ sudo apt-get install tmux
 
 $ install
 

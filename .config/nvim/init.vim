@@ -1,10 +1,10 @@
-" ----------
+"  --------
 "  key bind
-" ----------
+"  --------
 
 " Normal Mode
-cnoremap init :<C-u>edit $MYVIMRC<CR>
-noremap <Space>s :source $MYVIMRC<CR>
+cnoremap init :edit $MYVIMRC<CR>
+cnoremap commit :source $MYVIMRC<CR>
 
 " Split View movekey bind
 noremap <silent><C-h> <C-w>h
@@ -63,7 +63,7 @@ set visualbell
 " cursorl setting
 set ruler
 set cursorline
-set cursorcolumn
+set nocursorcolumn
 
 " tab setting
 set tabstop=2
@@ -97,6 +97,16 @@ inoremap ( ()<LEFT>
 inoremap (<Enter> ()<LEFT><CR><ESC><S-o>
 inoremap " ""<LEFT>
 inoremap ' ''<LEFT>
+
+" Resice Window bind
+nnoremap <C-w>h <C-w>3<
+nnoremap <C-w>l <C-w>3>
+nnoremap <C-w>k <C-w>3+
+nnoremap <C-w>j <C-w>3-
+
+" Split window bind
+nnoremap ss :sp<Space>
+nnoremap sv :vs<Space>
 
 " Mouse Activate setting
 if !has('nvim') && has('mouse')

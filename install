@@ -20,7 +20,6 @@ do
 done
 
 source ~/.bashrc
-source ~/.vimrc
 
 echo -e "\nBackup move to ~/.dotfiles_backup\n"
 echo -e "Done\n"
