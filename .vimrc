@@ -4,7 +4,7 @@
 
 " Normal Mode
 cnoremap init :<C-u>edit $MYVIMRC<CR>
-noremap <C-S-s> :source $MYVIMRC<CR>
+cnoremap commit :source $MYVIMRC<CR>
 
 " Split View movekey bind
 noremap <silent><C-h> <C-w>h
@@ -49,10 +49,10 @@ noremap <Right> <nop>
 noremap <Left> <nop>
 noremap <BS> <nop>
 
-" encode setting
+" Encode setting
 set encoding=utf-8
 
-" editer setting
+" Editer setting
 set number
 set splitbelow
 set splitright
@@ -60,12 +60,12 @@ set noequalalways
 set wildmenu
 set visualbell
 
-" cursorl setting
+" Cursorl setting
 set ruler
 set cursorline
-set cursorcolumn
+set nocursorcolumn
 
-" tab setting
+" Tab setting
 set tabstop=2
 set shiftwidth=2
 set lcs=tab:>.
@@ -73,12 +73,12 @@ set expandtab
 set autoindent
 set smartindent
 
-" search setting
+" Search setting
 set incsearch
 set smartcase
 set hlsearch
 
-" other setting
+" Other setting
 set list
 set showmatch
 set clipboard=unnamed
@@ -89,7 +89,23 @@ set hidden
 set showcmd
 set nowrap
 
-" for Coding setting
+" Resize window bind
+nnoremap <C-w>h <C-w>3<
+nnoremap <C-w>l <C-w>3>
+nnoremap <C-w>k <C-w>3+
+nnoremap <C-w>j <C-w>3-
+
+" Split window bind
+nnoremap ss :sp<CR>:terminal
+nnoremap sv :vs<CR>:terminal
+tnoremap <Esc> <C-/><C-n>
+
+" Mouse activate setting
+set mouse=a
+set ttymouse=sgr
+" set ttymouse=xterm2
+
+" Coding setting
 inoremap [ []<LEFT>
 inoremap { {}<LEFT>
 inoremap {<Enter> {}<LEFT><CR><ESC><S-o>
@@ -98,12 +114,5 @@ inoremap (<Enter> ()<LEFT><CR><ESC><S-o>
 inoremap " ""<LEFT>
 inoremap ' ''<LEFT>
 
-" Resice Window bind
-nnoremap <C-w>h <C-w>3<
-nnoremap <C-w>l <C-w>3>
-nnoremap <C-w>k <C-w>3+
-nnoremap <C-w>j <C-w>3-
-
-" Split window bind
-nnoremap ss :sp<Space>
-nnoremap sv :vs<Space>
+syntax enable
+colorscheme pablo

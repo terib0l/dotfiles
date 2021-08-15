@@ -49,10 +49,10 @@ noremap <Right> <nop>
 noremap <Left> <nop>
 noremap <BS> <nop>
 
-" encode setting
+" Encode setting
 set encoding=utf-8
 
-" editer setting
+" Editer setting
 set number
 set splitbelow
 set splitright
@@ -60,12 +60,12 @@ set noequalalways
 set wildmenu
 set visualbell
 
-" cursorl setting
+" Cursorl setting
 set ruler
 set cursorline
 set nocursorcolumn
 
-" tab setting
+" Tab setting
 set tabstop=2
 set shiftwidth=2
 set lcs=tab:>.
@@ -73,12 +73,12 @@ set expandtab
 set autoindent
 set smartindent
 
-" search setting
+" Search setting
 set incsearch
 set smartcase
 set hlsearch
 
-" other setting
+" Other setting
 set list
 set showmatch
 set clipboard=unnamed
@@ -89,36 +89,18 @@ set hidden
 set showcmd
 set nowrap
 
-" for Coding setting
-" inoremap [ []<LEFT>
-" inoremap { {}<LEFT>
-" inoremap {<Enter> {}<LEFT><CR><ESC><S-o>
-" inoremap ( ()<LEFT>
-" inoremap (<Enter> ()<LEFT><CR><ESC><S-o>
-" inoremap " ""<LEFT>
-" inoremap ' ''<LEFT>
-
-" Resice Window bind
+" Resice window bind
 nnoremap <C-w>h <C-w>3<
 nnoremap <C-w>l <C-w>3>
 nnoremap <C-w>k <C-w>3+
 nnoremap <C-w>j <C-w>3-
 
 " Split window bind
-nnoremap ss :sp<Space>
-nnoremap sv :vs<Space>
+nnoremap ss :sp<CR>sf<CR>
+nnoremap sv :vs<CR>sf<CR>
 
-" Mouse Activate setting
-if !has('nvim') && has('mouse')
-  set mouse=a
-  if has('mouse_sgr')
-    set ttymouse=sgr
-  elseif v:version > 703 || v:version is 703 && has('patch632')
-    set ttymouse=sgr
-  else
-    set ttymouse=xterm2
-  endif
-endif
+" Mouse activate setting
+set mouse=a
 
 "dein Scripts-----------------------------
 if &compatible
