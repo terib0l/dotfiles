@@ -34,7 +34,7 @@ $ sudo apt-get install tcllib
 
 $ sudo apt-get install tmux
 
-$ sh install
+$ bash install
 
 $ cd .vim/dein
 

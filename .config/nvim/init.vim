@@ -4,7 +4,7 @@
 
 " Normal Mode
 cnoremap init :edit $MYVIMRC<CR>
-cnoremap commit :source $MYVIMRC<CR>
+cnoremap src :source $MYVIMRC<CR>
 
 " Split View movekey bind
 noremap <silent><C-h> <C-w>h
@@ -96,8 +96,8 @@ nnoremap <C-w>k <C-w>3+
 nnoremap <C-w>j <C-w>3-
 
 " Split window bind
-nnoremap ss :sp<CR>sf<CR>
-nnoremap sv :vs<CR>sf<CR>
+nnoremap ss :sp<CR>
+nnoremap sv :vs<CR>
 
 " Mouse activate setting
 set mouse=a
