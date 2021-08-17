@@ -13,6 +13,7 @@ Using neovim + tmux like vscode.
 ├── .vimrc
 ├── .ide
 ├── .tmux.conf
+├── .xmodmap
 ├── install
 └── README.md
 ```

@@ -2,9 +2,18 @@
 "  key bind
 " ----------
 
+" Memo
+" - <C-w>n :new
+" * <C-w>s :split
+" * <C-w>v :vsplit
+" * <C-w>c :close
+" * <C-w>o :close all
+" * <C-w>w :go next
+" * <C-w>p :go previous
+
 " Normal Mode
-cnoremap init :<C-u>edit $MYVIMRC<CR>
-cnoremap commit :source $MYVIMRC<CR>
+cnoremap init :edit $MYVIMRC<CR>
+cnoremap load :source $MYVIMRC<CR>
 
 " Split View movekey bind
 noremap <silent><C-h> <C-w>h
@@ -90,20 +99,26 @@ set showcmd
 set nowrap
 
 " Resize window bind
-nnoremap <C-w>h <C-w>3<
-nnoremap <C-w>l <C-w>3>
-nnoremap <C-w>k <C-w>3+
-nnoremap <C-w>j <C-w>3-
+nnoremap <C-w>h <C-w>5<
+nnoremap <C-w>l <C-w>5>
+nnoremap <C-w>k <C-w>5+
+nnoremap <C-w>j <C-w>5-
 
 " Split window bind
 nnoremap ss :sp<CR>:terminal
 nnoremap sv :vs<CR>:terminal
 tnoremap <Esc> <C-/><C-n>
 
+" Binary editor bind
+nnoremap <C-w>b :set binary<CR>:%!xxd<CR>
+nnoremap <C-w>r :%!xxd -r<CR>
+
 " Mouse activate setting
-set mouse=a
-set ttymouse=sgr
-" set ttymouse=xterm2
+" set mouse=a
+" set ttymouse=sgr
+
+" Number bind
+noremap <C-w>n :set relativenumber!<CR>
 
 " Coding setting
 inoremap [ []<LEFT>

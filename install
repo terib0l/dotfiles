@@ -20,7 +20,6 @@ do
 done
 
 source ~/.bashrc
-xmodmap ~/.xmodmap
 
 echo -e "\nBackup move to ~/.dotfiles_backup\n"
 echo -e "Done\n"
