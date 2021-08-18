@@ -2,9 +2,18 @@
 "  key bind
 "  --------
 
+" Memo
+" - <C-w>n :new
+" * <C-w>s :split
+" * <C-w>v :vsplit
+" * <C-w>c :close
+" * <C-w>o :close all
+" * <C-w>w :go next
+" * <C-w>p :go previous
+
 " Normal Mode
-cnoremap init :edit $MYVIMRC<CR>
-cnoremap commit :source $MYVIMRC<CR>
+cnoremap _init :edit $MYVIMRC<CR>
+cnoremap _src :source $MYVIMRC<CR>
 
 " Split View movekey bind
 noremap <silent><C-h> <C-w>h
@@ -90,17 +99,27 @@ set showcmd
 set nowrap
 
 " Resice window bind
-nnoremap <C-w>h <C-w>3<
-nnoremap <C-w>l <C-w>3>
-nnoremap <C-w>k <C-w>3+
-nnoremap <C-w>j <C-w>3-
+nnoremap <C-w>h <C-w>5<
+nnoremap <C-w>l <C-w>5>
+nnoremap <C-w>k <C-w>5+
+nnoremap <C-w>j <C-w>5-
 
-" Split window bind
-nnoremap ss :sp<CR>sf<CR>
-nnoremap sv :vs<CR>sf<CR>
+" Binary editor bind
+noremap <C-w>b :set binary<CR>:%!xxd<CR>
+noremap <C-w>bb :%!xxd -r<CR>
+
+" Number bind
+noremap <C-w>r :set relativenumber!<CR>
+
+" Search bind
+noremap <C-w>n :set nohlsearch!<CR>
+nnoremap n nzz
+nnoremap N Nzz
+nnoremap * *zz
+nnoremap # #zz
 
 " Mouse activate setting
-set mouse=a
+" set mouse=a
 
 "dein Scripts-----------------------------
 if &compatible
