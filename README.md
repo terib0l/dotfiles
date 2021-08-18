@@ -13,6 +13,7 @@ Using neovim + tmux like vscode.
 ├── .vimrc
 ├── .ide
 ├── .tmux.conf
+├── .xmodmap
 ├── install
 └── README.md
 ```
@@ -34,7 +35,7 @@ $ sudo apt-get install tcllib
 
 $ sudo apt-get install tmux
 
-$ sh install
+$ bash install
 
 $ cd .vim/dein
 
