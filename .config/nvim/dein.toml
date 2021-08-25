@@ -1,7 +1,8 @@
+# Organize plugins
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
-# ターミナルのテーマカラー
+# Theme color
 [[plugins]]
 repo = 'jacoborus/tender.vim'
 hook_add = '''
@@ -16,7 +17,7 @@ repo = 'tpope/vim-endwise'
 [[plugins]]
 repo = 'jiangmiao/auto-pairs'
 
-# コードチェックの表示
+# Display code check
 [[plugins]]
 repo = 'w0rp/ale'
 
@@ -27,7 +28,7 @@ hook_add = '''
   source ~/.config/nvim/plugins/gitgutter.vim
 '''
 
-# git操作
+# Operate git
 [[plugins]]
 repo = 'tpope/vim-fugitive'
 hook_add = '''
@@ -48,7 +49,7 @@ hook_add = '''
   source ~/.config/nvim/plugins/denite.vim
 '''
 
-# ファイラー
+# Filer
 [[plugins]]
 repo = 'Shougo/defx.nvim'
 depends = ['defx-git', 'defx-icons']
