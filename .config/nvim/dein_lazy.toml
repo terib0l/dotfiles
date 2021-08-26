@@ -3,12 +3,9 @@
 repo = 'cespare/vim-toml'
 on_ft = 'toml'
 
-# LSP
-#[[plugins]]
-#repo = 'Shougo/deoplete.nvim'
-#on_event = 'InsertEnter'
-#hook_add = '''
-#  source ~/.config/nvim/plugins/deoplete.vim
-#'''
-
-# coc.vim (https://dev.classmethod.jp/articles/neovim_lsp_python/)
+# For Markdown
+[[plugins]]
+repo = 'instant-markdown/vim-instant-markdown'
+hook_add = '''
+  source ~/.config/nvim/plugins/markdown.vim
+'''

@@ -1,4 +1,4 @@
-let g:coc_global_extensions = ['coc-json']
+let g:coc_global_extensions = ['coc-json', 'coc-pyright', 'coc-sh', 'coc-clangd']
 
 " Give more space for displaying messages.
 " set cmdheight=2
@@ -57,7 +57,7 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
 " Use K to show documentation in preview window.
-nnoremap <silent> <C-k> :call <SID>show_documentation()<CR>
+" nnoremap <silent> <S-k> :call <SID>show_documentation()<CR>
 
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)

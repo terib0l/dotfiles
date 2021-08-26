@@ -12,8 +12,8 @@
 " * <C-w>p :go previous
 
 " Normal Mode
-cnoremap _init :edit $MYVIMRC<CR>
-cnoremap _src :source $MYVIMRC<CR>
+cnoremap <C-u>init :edit $MYVIMRC<CR>
+cnoremap <C-u>src :source $MYVIMRC<CR>
 
 " Split View movekey bind
 noremap <silent><C-h> <C-w>h
