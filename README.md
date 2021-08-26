@@ -35,6 +35,9 @@ $ sudo apt-get install tcllib
 
 $ sudo apt-get install tmux
 
+$ curl -sL install-node.now.sh/lts | bash
+$ curl --compressed -o- -L https://yarnpkg.com/install.sh | bash
+
 $ bash install
 
 $ cd .vim/dein

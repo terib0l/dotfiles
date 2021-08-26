@@ -4,6 +4,8 @@
 .config/neofetch
 .config/sao-nodejs
 .config/wslu
+.config/configstore
+.config/coc
 
 # below ".vim/"
 .vim/.netrwhist

@@ -56,3 +56,13 @@ depends = ['defx-git', 'defx-icons']
 hook_add = '''
   source ~/.config/nvim/plugins/defx.vim
 '''
+
+# LSP
+[[plugins]]
+repo = 'neoclide/coc.nvim'
+merged = 0
+rev = 'master'
+build = 'yarn install --frozen-lockfile'
+hook_add = '''
+  source ~/.config/nvim/plugins/coc.vim
+'''
