@@ -1,12 +1,13 @@
 # below ".config/"
-.config/nvim/.netrwhist
+.config/coc
 .config/configstore
 .config/neofetch
+.config/nvim/.netrwhist
+.config/nvim/nvim
 .config/sao-nodejs
 .config/wslu
 
 # below ".vim/"
-.vim/.netrwhist
 .vim/dein/.cache
 .vim/dein/cache_nvim
 .vim/dein/repos

@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/terib0l/practice/fastapi/sample'
+let g:netrw_dirhist_5='/home/terib0l/practice/fastapi'
+let g:netrw_dirhist_4='/home/terib0l/practice/fastapi/sample'
+let g:netrw_dirhist_3='/home/terib0l/practice/fastapi/sample/testing'
+let g:netrw_dirhist_2='/home/terib0l/practice/fastapi/sample'
+let g:netrw_dirhist_1='/home/terib0l/practice/fastapi/sample/testing'

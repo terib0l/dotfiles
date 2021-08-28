@@ -22,18 +22,20 @@ Using neovim + tmux like vscode.
 ```
 $ git clone https://github.com/terib0l/dotfiles
 
-$ cd dotfiles
+$ sudo apt-get install python3 python3-pip neovim tmux curl
 
-$ sudo apt-get install python3
-
-$ sudo apt-get install python3-pip
-
-$ sudo apt-get install neovim
-
-# for denite -> pt
+### for denite -> pt
 $ sudo apt-get install tcllib
 
-$ sudo apt-get install tmux
+### for coc
+$ curl -sL install-node.now.sh/lts | bash
+$ curl --compressed -o- -L https://yarnpkg.com/install.sh | bash
+
+### for instant-markdown
+$ sudo apt-get install xdg-utils
+$ npm -g install instant-markdown-d
+
+$ cd dotfiles
 
 $ bash install
 

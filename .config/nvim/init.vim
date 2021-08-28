@@ -12,8 +12,8 @@
 " * <C-w>p :go previous
 
 " Normal Mode
-cnoremap _init :edit $MYVIMRC<CR>
-cnoremap _src :source $MYVIMRC<CR>
+cnoremap <C-u>init :edit $MYVIMRC<CR>
+cnoremap <C-u>src :source $MYVIMRC<CR>
 
 " Split View movekey bind
 noremap <silent><C-h> <C-w>h
@@ -35,11 +35,11 @@ vnoremap <S-l> 10<Right>
 nnoremap <C-e> <End>
 
 " Insert Mode movekey bind
-inoremap <C-d> <BS>
-inoremap <C-h> <Left>
-inoremap <C-l> <Right>
 inoremap <C-k> <Up>
 inoremap <C-j> <Down>
+inoremap <C-l> <Right>
+inoremap <C-h> <Left>
+inoremap <C-d> <BS>
 
 " Default nop
 vnoremap <Up> <nop>
@@ -93,6 +93,7 @@ set showmatch
 set clipboard=unnamed
 set noswapfile
 set nobackup
+set nowritebackup
 set autoread
 set hidden
 set showcmd
@@ -109,11 +110,14 @@ noremap <C-w>b :set binary<CR>:%!xxd<CR>
 noremap <C-w>bb :%!xxd -r<CR>
 
 " Number bind
-noremap <C-w>n :set relativenumber!<CR>
-" noremap n nzz
-" noremap N Nzz
-" noremap * *zz
-" noremap # #zz
+noremap <C-w>r :set relativenumber!<CR>
+
+" Search bind
+noremap <C-w>n :set nohlsearch!<CR>
+nnoremap n nzz
+nnoremap N Nzz
+nnoremap * *zz
+nnoremap # #zz
 
 " Mouse activate setting
 " set mouse=a
@@ -151,58 +155,3 @@ if dein#check_install()
   call dein#install()
 endif
 "End dein Scripts-------------------------
-
-"Defx Config: start -----------------
-autocmd FileType defx call s:defx_my_settings()
-    function! s:defx_my_settings() abort
-     " Define mappings
-      nnoremap <silent><buffer><expr> <CR>
-     \ defx#do_action('open')
-      nnoremap <silent><buffer><expr> c
-     \ defx#do_action('copy')
-      nnoremap <silent><buffer><expr> m
-     \ defx#do_action('move')
-      nnoremap <silent><buffer><expr> p
-     \ defx#do_action('paste')
-      nnoremap <silent><buffer><expr> l
-     \ defx#do_action('open')
-      nnoremap <silent><buffer><expr> E
-     \ defx#do_action('open', 'vsplit')
-      nnoremap <silent><buffer><expr> P
-     \ defx#do_action('open', 'pedit')
-      nnoremap <silent><buffer><expr> K
-     \ defx#do_action('new_directory')
-      nnoremap <silent><buffer><expr> N
-     \ defx#do_action('new_file')
-      nnoremap <silent><buffer><expr> d
-     \ defx#do_action('remove')
-      nnoremap <silent><buffer><expr> r
-     \ defx#do_action('rename')
-      nnoremap <silent><buffer><expr> x
-     \ defx#do_action('execute_system')
-      nnoremap <silent><buffer><expr> yy
-     \ defx#do_action('yank_path')
-      nnoremap <silent><buffer><expr> .
-     \ defx#do_action('toggle_ignored_files')
-      nnoremap <silent><buffer><expr> h
-     \ defx#do_action('cd', ['..'])
-      nnoremap <silent><buffer><expr> ~
-     \ defx#do_action('cd')
-      nnoremap <silent><buffer><expr> q
-     \ defx#do_action('quit')
-      nnoremap <silent><buffer><expr> <Space>
-     \ defx#do_action('toggle_select') . 'j'
-      nnoremap <silent><buffer><expr> *
-     \ defx#do_action('toggle_select_all')
-      nnoremap <silent><buffer><expr> j
-     \ line('.') == line('$') ? 'gg' : 'j'
-      nnoremap <silent><buffer><expr> k
-     \ line('.') == 1 ? 'G' : 'k'
-      nnoremap <silent><buffer><expr> <C-l>
-     \ defx#do_action('redraw')
-      nnoremap <silent><buffer><expr> <C-g>
-     \ defx#do_action('print')
-      nnoremap <silent><buffer><expr> cd
-     \ defx#do_action('change_vim_cwd')
-    endfunction
-"Defx Config: end -------------------
