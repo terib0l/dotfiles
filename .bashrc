@@ -87,8 +87,8 @@ alias ..='cd ..'
 alias ....='cd ../../'
 alias ......='cd ../../../'
 alias ........='cd ../../../../'
-alias vim='nvim'
 alias ide='/bin/bash ~/.ide'
+alias open='xdg-open'
 
 # Prompt Config
 if [ $UID -eq 0 ]; then
